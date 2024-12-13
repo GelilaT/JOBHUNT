@@ -11,6 +11,14 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        button: {
+          DEFAULT: '#294DDA', 
+          hover: '#1E1E1E', 
+        },
+      },
+      fontFamily: {
+        sans: ['Work Sans', 'sans-serif'], 
+        poppins: ['Poppins', 'sans-serif'], 
       },
     },
   },
