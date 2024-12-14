@@ -1,3 +1,4 @@
+'use client'
 import Search from "@/components/Search";
 import Button from "@/components/ui/Button";
 import Image from "next/image";
@@ -49,6 +50,12 @@ export default function Home() {
           <Image src={'/i4.png'} alt="person1" width={150} height={150} />
           <h2 className="font-bold text-2xl">Real time feedback</h2>
           <p className="w-72 text-center">Apply now and become part of a community that values innovation, collaboration, and growth.</p>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <i class="fi fi-ts-chart-mixed-up-circle-dollar"></i>
         </div>
       </div>
     </div>
