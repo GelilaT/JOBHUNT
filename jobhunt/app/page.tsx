@@ -2,6 +2,9 @@
 import Search from "@/components/Search";
 import Button from "@/components/ui/Button";
 import Image from "next/image";
+import { FontAwesomeIcon, FontAwesomeIconProps } from "@fortawesome/react-fontawesome";
+import { faChartLine, faHandshake , faUser, faBullhorn, faPenFancy, faHandHoldingDollar, faBriefcase, faHeadset } from "@fortawesome/free-solid-svg-icons";
+import Joblist from "@/components/ui/Joblist";
 
 export default function Home() {
   return (
@@ -53,9 +56,99 @@ export default function Home() {
         </div>
       </div>
 
-      <div>
-        <div>
-          <i class="fi fi-ts-chart-mixed-up-circle-dollar"></i>
+      <p className="text-6xl font-bold text-center font-poppins pb-16">Find your favorite job</p>
+      <div className="flex gap-2 text-xl pb-44">
+        <div className="flex flex-col px-14 items-start gap-8">
+          <div className="flex items-center gap-5 hover:bg-hover py-2 pl-4 rounded-sm w-full pr-20">
+            <FontAwesomeIcon icon={faChartLine} />
+            <p>Accounting</p>
+
+          </div>
+          <div className="flex items-center gap-3 hover:bg-hover py-2 pl-4 rounded-sm w-full pr-20">
+            <FontAwesomeIcon icon={faHandshake} />
+            <p>Business & Consulting</p>
+
+          </div>
+          <div className="flex items-center gap-5 hover:bg-hover py-2 pl-4 rounded-sm w-full pr-20">
+            <FontAwesomeIcon icon={faUser} />
+            <p>Human research</p>
+
+          </div>
+          <div className="flex items-center gap-5 hover:bg-hover py-2 pl-4 rounded-sm w-full pr-20">
+            <FontAwesomeIcon icon={faBullhorn} />
+            <p>Marketing & Finance</p>
+
+          </div>
+          <div className="flex items-center gap-5 hover:bg-hover py-2 pl-4 rounded-sm w-full pr-20">
+            <FontAwesomeIcon icon={faPenFancy} />
+            <p>Design & development</p>
+
+          </div>
+          <div className="flex items-center gap-5 hover:bg-hover py-2 pl-4 rounded-sm w-full pr-20">
+            <FontAwesomeIcon icon={faHandHoldingDollar} />
+            <p>Finance management</p>
+
+          </div>
+          <div className="flex items-center gap-5 hover:bg-hover py-2 px-4 rounded-sm w-full pr-20">
+            <FontAwesomeIcon icon={faBriefcase} />
+            <p>Project management</p>
+          </div>
+          <div className="flex items-center gap-5 hover:bg-hover py-2 px-4 rounded-sm w-full pr-20">
+            <FontAwesomeIcon icon={faHeadset} />
+            <p>Customer services</p>
+          </div>
+
+        </div>
+        <div >
+
+          <Joblist />
+          <Button text="Browse all jobs"/>
+        </div>
+
+
+      </div>
+
+      <div className="bg-black pt-32">
+        <div className="flex">
+          <div className="pl-7 w-[450px]">
+            <p className="font-bold text-5xl font-poppins w-[450px] leading-normal">Trusted by over 20,000+ users around the world</p>
+            <p className="w-[490px] leading-7 text-lg">Join a global community of over 20,000 satisfied users who trust us to deliver exceptional results.</p>
+            <div className="flex gap-16 items-center pt-5">
+              <div>
+                <h2 className="text-4xl font-bold">1500<span className="text-primary">+</span></h2>
+                <p>Job offers</p>
+              </div>
+
+              <div>
+                <h2 className="text-4xl font-bold">100<span className="text-primary">+</span></h2>
+                <p>Countries</p>
+              </div>
+
+              <div>
+                <h2 className="text-4xl font-bold">300<span className="text-primary">+</span></h2>
+                <p>Companies</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div className="flex gap-20">
+          <div className="flex pt-16">
+            <Image src={'/f1.png'} alt="person1" width={120} height={30} className="w-32 h-28"/>
+            <Image src={'/f2.png'} alt="person1" width={150} height={150} className="w-32 h-28"/>
+            <Image src={'/f3.png'} alt="person1" width={150} height={150} className="w-32 h-28"/>
+            <Image src={'/f4.png'} alt="person1" width={150} height={150} className="w-32 h-28"/>
+            <Image src={'/f5.png'} alt="person1" width={150} height={150} className="w-32 h-28"/>
+          </div>
+
+          <div className="flex pt-16">
+            <Image src={'/f6.png'} alt="person1" width={120} height={30} className="w-32 h-28"/>
+            <Image src={'/f1.png'} alt="person1" width={150} height={150} className="w-32 h-28"/>
+            <Image src={'/f2.png'} alt="person1" width={150} height={150} className="w-32 h-28"/>
+            <Image src={'/f3.png'} alt="person1" width={150} height={150} className="w-32 h-28"/>
+            <Image src={'/f4.png'} alt="person1" width={150} height={150} className="w-32 h-28"/>
+          </div>
         </div>
       </div>
     </div>

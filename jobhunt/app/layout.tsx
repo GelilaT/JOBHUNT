@@ -1,13 +1,12 @@
 'use client'
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/ui/Navbar";
 import { Work_Sans } from 'next/font/google';
 import { Poppins } from 'next/font/google';
 import { Provider } from "react-redux";
 import store from "@/redux/store";
-import Head from "next/head";
+import "@/lib/utils/fontawesome";
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -16,7 +15,7 @@ const poppins = Poppins({
 
 const workSans = Work_Sans({
   subsets: ['latin'],
-  weight: ['400', '700'], 
+  weight: ['400', '600'], 
 });
 
 const metadata: Metadata = {
@@ -32,11 +31,8 @@ export default function RootLayout({
   return (
   
     <html lang="en">
-      <Head>
-        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css' />
-      </Head>
       <body
-        className={`${workSans.className} antialiased`}
+        className={`${workSans.className} ${poppins.className} antialiased`}
         >
         <Provider store={store}>
           

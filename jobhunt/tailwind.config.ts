@@ -11,9 +11,12 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        hover: "#294DDA",
+        primary: "#294DDA",
         button: {
           DEFAULT: '#294DDA', 
           hover: '#1E1E1E', 
+          border: '#353535'
         },
       },
       fontFamily: {
