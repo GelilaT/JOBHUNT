@@ -10,7 +10,7 @@ import "@/lib/utils/fontawesome";
 
 const poppins = Poppins({
   subsets: ['latin'],
-  weight: ['400', '600'], // Choose the weights you need
+  weight: ['400', '600'], 
 });
 
 const workSans = Work_Sans({

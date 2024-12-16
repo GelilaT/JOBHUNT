@@ -5,6 +5,7 @@ import Image from "next/image";
 import { FontAwesomeIcon, FontAwesomeIconProps } from "@fortawesome/react-fontawesome";
 import { faChartLine, faHandshake , faUser, faBullhorn, faPenFancy, faHandHoldingDollar, faBriefcase, faHeadset } from "@fortawesome/free-solid-svg-icons";
 import Joblist from "@/components/ui/Joblist";
+import Animations from "@/components/ui/Animations";
 
 export default function Home() {
   return (
@@ -133,22 +134,30 @@ export default function Home() {
 
         </div>
 
-        <div className="flex gap-20">
-          <div className="flex pt-16">
-            <Image src={'/f1.png'} alt="person1" width={120} height={30} className="w-32 h-28"/>
-            <Image src={'/f2.png'} alt="person1" width={150} height={150} className="w-32 h-28"/>
-            <Image src={'/f3.png'} alt="person1" width={150} height={150} className="w-32 h-28"/>
-            <Image src={'/f4.png'} alt="person1" width={150} height={150} className="w-32 h-28"/>
-            <Image src={'/f5.png'} alt="person1" width={150} height={150} className="w-32 h-28"/>
-          </div>
+        <Animations />
+      </div>
+      <div className="flex gap-20 py-20 pl-5">
+        <div className="bg-black pt-10">
+          <h1 className="font-poppins font-bold text-4xl w-80 pl-10">Download the application now</h1>
+          <Image src={'/download.png'} alt="download call to action" width={500} height={150} />
+        </div>
+        <div className="font-bold text-lg font-poppins">
+          <h1 className="text-4xl pb-10 font-poppins">Frequently asked questions</h1>
+          <p className="pb-10"><span className="text-xl font-normal pr-3">+</span> How do I get started?</p>
+          <p className="pb-10"><span className="text-xl font-normal pr-3">+</span> Is the app free to use?</p>
+          <p className="pb-10"><span className="text-xl font-normal pr-3">+</span> What platforms is this app available on?</p>
+          <p className="pb-10"><span className="text-xl font-normal pr-3">+</span> Can I reset my password if I forget it?</p>
+          <p className="pb-10"><span className="text-xl font-normal pr-3">+</span> Can I delete my account?</p>
+          <p className="pb-10"><span className="text-xl font-normal pr-3">+</span> Is my data safe on this app?</p>
 
-          <div className="flex pt-16">
-            <Image src={'/f6.png'} alt="person1" width={120} height={30} className="w-32 h-28"/>
-            <Image src={'/f1.png'} alt="person1" width={150} height={150} className="w-32 h-28"/>
-            <Image src={'/f2.png'} alt="person1" width={150} height={150} className="w-32 h-28"/>
-            <Image src={'/f3.png'} alt="person1" width={150} height={150} className="w-32 h-28"/>
-            <Image src={'/f4.png'} alt="person1" width={150} height={150} className="w-32 h-28"/>
-          </div>
+        </div>
+      </div>
+
+      <div className="mx-auto flex flex-col items-center">
+        <p className="text-5xl font-poppins font-bold pb-10">Never miss an update!</p>
+        <div className="bg-button-hover border-button-border border-2 flex items-center gap-48 p-1 w-fit">
+          <input type="text" placeholder="Enter your email" className="bg-transparent pl-5 text-white text-sm"/>
+          <Button text="Subscribe"/>
         </div>
       </div>
     </div>
