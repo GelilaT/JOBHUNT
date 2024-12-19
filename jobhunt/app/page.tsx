@@ -153,13 +153,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mx-auto flex flex-col items-center">
-        <p className="text-5xl font-poppins font-bold pb-10">Never miss an update!</p>
-        <div className="bg-button-hover border-button-border border-2 flex items-center gap-48 p-1 w-fit">
-          <input type="text" placeholder="Enter your email" className="bg-transparent pl-5 text-white text-sm"/>
-          <Button text="Subscribe"/>
-        </div>
-      </div>
+      
     </div>
   );
 }

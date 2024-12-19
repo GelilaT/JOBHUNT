@@ -56,7 +56,7 @@ const About = () => {
         <Animations />
       </div>
       
-      <div>
+      <div className='flex gap-20 px-24 pt-40 pb-20'>
         <div className='bg-black flex gap-2 items-end justify-end'>
           <div className='flex flex-col pl-10 py-10 gap-5 w-fit'>
             <h1 className='text-3xl font-bold'>Post a featured job</h1>
@@ -66,9 +66,21 @@ const About = () => {
               <Button text='Post a job'/>
             </div>
           </div>
-          <Image src={'/postajob1.png'} width={100} height={50} alt='image'/>
+          <Image src={'/postajob1.png'} width={150} height={100} alt='image'/>
         </div>
-      </div>
+
+        <div className='bg-black flex gap-2 items-end justify-end'>
+          <div className='flex flex-col pl-10 py-10 gap-5 w-fit'>
+            <h1 className='text-3xl font-bold'>Post a free job</h1>
+            <p>Start hiring now—post a job for free and connect with great candidates!</p>
+            <div className=''>
+
+              <Button text='Post a job'/>
+            </div>
+          </div>
+          <Image src={'/postajob2.png'} width={150} height={50} alt='image'/>
+        </div>
+        </div>
     </div>
   )
 }

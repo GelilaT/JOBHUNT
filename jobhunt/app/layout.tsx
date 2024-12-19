@@ -7,6 +7,7 @@ import { Poppins } from 'next/font/google';
 import { Provider } from "react-redux";
 import store from "@/redux/store";
 import "@/lib/utils/fontawesome";
+import Footer from "@/components/ui/Footer";
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -38,6 +39,7 @@ export default function RootLayout({
           
           <Navbar />
           {children}
+          <Footer />
         </Provider>
       </body>
     </html>
