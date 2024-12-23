@@ -13,6 +13,9 @@ Jobhunt is a modern job listing platform designed to connect employers with top 
 - **User Profiles**: Create profiles to highlight your skills and career history.
 - **Responsive Design**: Fully optimized for desktop, tablet, and mobile devices.
 
+![Jobhunt home](./images/home.png)
+![Jobhunt home](./images/home1.png)
+
 ## Technologies Used
 
 - **Frontend**: Built with [Next.js](https://nextjs.org/) for a fast and scalable user interface.
