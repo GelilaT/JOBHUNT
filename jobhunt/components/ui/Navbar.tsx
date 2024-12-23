@@ -16,8 +16,11 @@ const Navbar = () => {
                     <li>Home</li>
                   </Link>
                   
+                 <Link href="/about">
+                      
+                    <li>About</li>
+                  </Link>
                   <li>Find a Job</li>
-                  <li>Cart</li>
                   <li className='border border-white py-2 px-3'>Post a Job</li>
               </ul>
         </div>
