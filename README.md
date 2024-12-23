@@ -1,6 +1,4 @@
-# Jobhunt
-
-<img src="./images/logo.png" alt="Jobhunt Logo" width="200" height="100" />
+# Jobhunt <img src="./images/logo.png" alt="Jobhunt Logo" width="200" height="150" />
 
 Jobhunt is a modern job listing platform designed to connect employers with top talent. Whether you're looking to post a job, browse available opportunities, or showcase your skills, Jobhunt offers a user-friendly experience to help you achieve your hiring or career goals.
 
