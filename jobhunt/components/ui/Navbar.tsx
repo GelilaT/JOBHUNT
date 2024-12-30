@@ -21,7 +21,10 @@ const Navbar = () => {
                     <li>About</li>
                   </Link>
                   <li>Find a Job</li>
-                  <li className='border border-white py-2 px-3'>Post a Job</li>
+                  <Link href="/post">
+                  
+                    <li className='border border-white py-2 px-3'>Post a Job</li>
+                  </Link>
               </ul>
         </div>
     </div>
