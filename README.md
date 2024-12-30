@@ -1,6 +1,4 @@
-# Jobhunt
-
-![Jobhunt Logo](./images/logo.png)
+# Jobhunt 
 
 Jobhunt is a modern job listing platform designed to connect employers with top talent. Whether you're looking to post a job, browse available opportunities, or showcase your skills, Jobhunt offers a user-friendly experience to help you achieve your hiring or career goals.
 
@@ -12,6 +10,9 @@ Jobhunt is a modern job listing platform designed to connect employers with top 
 - **Free Job Posting**: Post jobs for free to reach a wide audience.
 - **User Profiles**: Create profiles to highlight your skills and career history.
 - **Responsive Design**: Fully optimized for desktop, tablet, and mobile devices.
+
+![Jobhunt home](./images/home.png)
+![Jobhunt home](./images/home1.png)
 
 ## Technologies Used
 
