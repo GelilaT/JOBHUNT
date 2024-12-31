@@ -1,4 +1,4 @@
-import { Job } from 'src/jobs/jobs.entity';
+import { Job } from 'src/job/entities/job.entity';
 import { Proposal } from 'src/proposal/proposal.entity';
 import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm';
 

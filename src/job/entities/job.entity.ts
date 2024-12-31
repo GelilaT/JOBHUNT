@@ -1,5 +1,5 @@
 import { Proposal } from 'src/proposal/proposal.entity';
-import { User } from 'src/users/user.entity';
+import { User } from 'src/user/entities/user.entity';
 import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, OneToMany, CreateDateColumn, UpdateDateColumn } from 'typeorm';
 
 @Entity()
