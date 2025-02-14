@@ -16,6 +16,9 @@ export class User {
   @Column()
   name: string;
 
+  @Column()
+  Lname: string;
+
   @Column({ default: null })
   avatarUrl: string;
 
