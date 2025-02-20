@@ -1,5 +1,5 @@
 import { Job } from 'src/job/entities/job.entity';
-import { Proposal } from 'src/proposal/proposal.entity';
+import { Proposal } from 'src/proposal/entities/proposal.entity';
 import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm';
 
 @Entity()

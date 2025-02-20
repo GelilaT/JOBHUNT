@@ -2,13 +2,10 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { UsersModule } from './users/users.module';
-import { JobsModule } from './jobs/jobs.module';
-import { ApplicationsModule } from './applications/applications.module';
+import { UserModule  } from './user/user.module';
+import { JobModule } from './job/job.module';
 import { AuthModule } from './auth/auth.module';
 import { ProposalModule } from './proposal/proposal.module';
-import { UserController } from './user/user.controller';
-import { UserService } from './user/user.service';
 
 @Module({
   imports: [
@@ -22,13 +19,13 @@ import { UserService } from './user/user.service';
       autoLoadEntities: true,
       synchronize: true,
     }),
-    UsersModule,
-    JobsModule,
-    ApplicationsModule,
+    UserModule,
+    JobModule,
+    ProposalModule,
     AuthModule,
     ProposalModule
   ],
-  controllers: [AppController, UserController],
-  providers: [AppService, UserService],
+  controllers: [AppController],
+  providers: [AppService],
 })
 export class AppModule {}
